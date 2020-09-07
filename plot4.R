@@ -30,7 +30,7 @@ consumption_data$DateTime <- strptime(paste(consumption_data$Date, consumption_d
 ## Set the plotting area
 
 ## Create a png object
-png("plot4a.png", 480,480)
+png("plot4.png", 480,480)
 
 ## Set the plot area, 2 by 2
 par(mfrow = c(2,2))##, mar = c(4,4,4,4))

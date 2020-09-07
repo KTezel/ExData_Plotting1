@@ -28,7 +28,7 @@ consumption_data <- read.csv.sql("household_power_consumption.txt","select * fro
 consumption_data$DateTime <- strptime(paste(consumption_data$Date, consumption_data$Time), format = "%d/%m/%Y %H:%M:%S")
 
 ## Create a png object
-png("plot3.png", 480,480)
+png("plot3.png", 500,500)
 
 ## Plot 3
 plot(consumption_data$DateTime, consumption_data$Sub_metering_1, type = "l", ylab = "Energy Submetering", xlab = "")
